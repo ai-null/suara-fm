@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("kotlin-android")
     id("kotlin-kapt")
+    id("com.google.secrets_gradle_plugin").version("0.1")
 }
 
 android {
@@ -19,7 +20,13 @@ android {
     }
 
     buildTypes {
+        getByName("debug") {
+            buildConfigField("String", "BASE_URL", "\"https://listen-api.listennotes.com/api/v2/\"")
+        }
+
         getByName("release") {
+            buildConfigField("String", "BASE_URL", "\"https://listen-api.listennotes.com/api/v2/\"")
+
             minifyEnabled(false)
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
