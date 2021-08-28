@@ -71,10 +71,6 @@ dependencies {
     // retrofit for http request
     implementation(Deps.Network.retrofit)
 
-    // body parser for retrofit
-    implementation(Deps.Network.gson)
-    implementation(Deps.Network.gsonConverter)
-
     // coroutines
     implementation(Deps.Utils.coroutinesAndroid)
     implementation(Deps.Utils.coroutinesCore)
