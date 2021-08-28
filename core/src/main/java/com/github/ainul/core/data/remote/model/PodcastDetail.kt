@@ -9,21 +9,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
-package com.github.ainul.suarafm.data.model.reponse
+package com.github.ainul.core.data.remote.model
 
-import com.github.ainul.suarafm.data.model.PodcastDetail
 import com.google.gson.annotations.SerializedName
 
-data class BestPodcastResponse (
-	@SerializedName("id") val id : Int,
-	@SerializedName("name") val name : String,
-	@SerializedName("total") val total : Int,
-	@SerializedName("has_next") val hasNext : Boolean,
-	@SerializedName("podcasts") val podcasts : List<PodcastDetail>,
-	@SerializedName("parent_id") val parentId : Int,
-	@SerializedName("page_number") val pageNumber : Int,
-	@SerializedName("has_previous") val hasPrevious : Boolean,
+data class PodcastDetail (
+	@SerializedName("id") val id : String,
+	@SerializedName("rss") val rss : String,
+	@SerializedName("type") val type : String,
+	@SerializedName("email") val email : String,
+	@SerializedName("extra") val extra : Extra,
+	@SerializedName("image") val image : String,
+	@SerializedName("title") val title : String,
+	@SerializedName("country") val country : String,
+	@SerializedName("website") val website : String,
+	@SerializedName("language") val language : String,
+	@SerializedName("genre_ids") val genreIds : List<Int>,
+	@SerializedName("itunes_id") val itunesId : Int,
+	@SerializedName("publisher") val publisher : String,
+	@SerializedName("thumbnail") val thumbnail : String,
+	@SerializedName("is_claimed") val isClaimed : Boolean,
+	@SerializedName("description") val description : String,
+	@SerializedName("listen_score") val listenScore : Int,
+	@SerializedName("total_episodes") val totalEpisodes : Int,
 	@SerializedName("listennotes_url") val listenNotesUrl : String,
-	@SerializedName("next_page_number") val nextPageNumber : Int,
-	@SerializedName("previous_page_number") val previousPageNumber : Int
+	@SerializedName("explicit_content") val explicitContent : Boolean,
+	@SerializedName("latest_pub_date_ms") val latestPubDateMs : Int,
+	@SerializedName("earliest_pub_date_ms") val earliestPubDateMs : Int,
+	@SerializedName("listen_score_global_rank") val listenScoreGlobalRank : String
 )

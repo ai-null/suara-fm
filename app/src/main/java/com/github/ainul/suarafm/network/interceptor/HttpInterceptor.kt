@@ -1,4 +1,4 @@
-package com.github.ainul.suarafm.data.network.interceptor
+package com.github.ainul.suarafm.network.interceptor
 
 import android.util.Log
 import okhttp3.logging.HttpLoggingInterceptor

@@ -1,7 +1,7 @@
-package com.github.ainul.suarafm.data.network
+package com.github.ainul.suarafm.network
 
 import com.github.ainul.suarafm.BuildConfig
-import com.github.ainul.suarafm.data.network.interceptor.HttpInterceptor
+import com.github.ainul.suarafm.network.interceptor.HttpInterceptor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import java.util.concurrent.TimeUnit

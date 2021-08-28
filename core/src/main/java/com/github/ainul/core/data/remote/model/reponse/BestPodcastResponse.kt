@@ -9,15 +9,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
-package com.github.ainul.suarafm.data.model.reponse
+package com.github.ainul.core.data.remote.model.reponse
 
-import com.github.ainul.suarafm.data.model.SearchResult
+import com.github.ainul.core.data.remote.model.PodcastDetail
 import com.google.gson.annotations.SerializedName
 
-data class SearchResponse(
-    @SerializedName("took") val took: Double,
-    @SerializedName("count") val count: Int,
-    @SerializedName("total") val total: Int,
-    @SerializedName("results") val results: List<SearchResult>,
-    @SerializedName("next_offset") val next_offset: Int
+data class BestPodcastResponse (
+	@SerializedName("id") val id : Int,
+	@SerializedName("name") val name : String,
+	@SerializedName("total") val total : Int,
+	@SerializedName("has_next") val hasNext : Boolean,
+	@SerializedName("podcasts") val podcasts : List<PodcastDetail>,
+	@SerializedName("parent_id") val parentId : Int,
+	@SerializedName("page_number") val pageNumber : Int,
+	@SerializedName("has_previous") val hasPrevious : Boolean,
+	@SerializedName("listennotes_url") val listenNotesUrl : String,
+	@SerializedName("next_page_number") val nextPageNumber : Int,
+	@SerializedName("previous_page_number") val previousPageNumber : Int
 )

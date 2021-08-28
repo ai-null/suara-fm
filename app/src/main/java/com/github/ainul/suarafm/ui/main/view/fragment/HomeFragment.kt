@@ -5,9 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
 import com.github.ainul.suarafm.R
-import com.github.ainul.suarafm.data.model.PodcastModel
+import com.github.ainul.core.data.remote.model.PodcastModel
 import com.github.ainul.suarafm.databinding.FragmentHomeBinding
 import com.github.ainul.suarafm.ui.main.view.adapter.PopularPodcastAdapter
 import com.github.ainul.suarafm.ui.main.view.adapter.RecentlyUploadedAdapter

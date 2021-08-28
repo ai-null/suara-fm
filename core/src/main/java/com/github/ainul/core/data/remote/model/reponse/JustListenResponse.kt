@@ -1,4 +1,4 @@
-package com.github.ainul.suarafm.data.model.reponse
+package com.github.ainul.core.data.remote.model.reponse
 
 import com.google.gson.annotations.SerializedName
 

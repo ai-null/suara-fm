@@ -4,7 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.github.ainul.suarafm.data.model.PodcastModel
+import com.github.ainul.core.data.remote.model.PodcastModel
 import com.github.ainul.suarafm.databinding.ListPodcastBinding
 
 class RecentlyUploadedAdapter(
