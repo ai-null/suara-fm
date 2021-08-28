@@ -1,4 +1,4 @@
-package com.github.ainul.suarafm.util
+package com.github.ainul.core.utils
 
 object Endpoint {
     const val header = "X-ListenAPI-Key"

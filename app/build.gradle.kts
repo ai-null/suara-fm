@@ -48,6 +48,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":core"))
 
     implementation(Deps.AppConfig.kotlin)
     implementation(Deps.AndroidX.androidCore)
@@ -68,6 +69,10 @@ dependencies {
 
     // retrofit for http request
     implementation(Deps.Network.retrofit)
+
+    // body parser for retrofit
+    implementation(Deps.Network.gson)
+    implementation(Deps.Network.gsonConverter)
 
     // coroutines
     implementation(Deps.Utils.coroutinesAndroid)
