@@ -22,12 +22,10 @@ android {
     buildTypes {
         getByName("debug") {
             buildConfigField("String", "BASE_URL", "\"https://listen-api.listennotes.com/api/v2/\"")
-            buildConfigField("String", "API_KEY", properties.getOrDefault("API_KEY", "") as String)
         }
 
         getByName("release") {
             buildConfigField("String", "BASE_URL", "\"https://listen-api.listennotes.com/api/v2/\"")
-            buildConfigField("String", "API_KEY", properties.getOrDefault("API_KEY", "") as String)
 
             minifyEnabled(false)
             proguardFiles(
